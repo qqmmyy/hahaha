@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>City Temperature Search</title>
-    <!-- 引入 echarts 库 -->
+   
     <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.min.js"></script>
 </head>
 <body style="background-color: rgba(240,248,255,0.5)" >
-    <!-- 输入框和按钮 -->
+    
     <input type="text" id="cityInput" placeholder="输入城市名称+年份(21-23)">
     <button onclick="searchCity()">搜索</button>
-    <!-- echarts图表容器 -->
+    
     <div id="chartContainer" style="width: 1100px; height: 300px;"></div>
 
     <script>
-        // 示例数据，用于演示
+      
         var cityData = {
             "成都2021": {
                               "最高气温" :[17, 21, 27, 30, 34, 35, 37, 40, 32, 31, 20, 18],     
