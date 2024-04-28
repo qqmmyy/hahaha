@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>旅游数据可视化</title>
+    <style>
+         @font-face {
+         font-family: "MyFont";
+         src: url("STXINGKA.TTF");
+}
+</style>
     <style type="text/css">
             p{
                 position:absolute;
                 top:100px;
                 left:350px;
                 font-size: 140px;
-                color:#FF6347;
-                font-family:鸿雷板书简体-正式版;
+                color:black;   
+              font-family:MyFont;
             }
-           *{
-                margin: 0px;
-                padding: 0px;
-                box-sizing: border-box;
-                font-family: sans-serif;
-            }
+            *{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
             $color-gray: #666;
             $color-black: #000;
             $stripe-height: 7px;
@@ -136,17 +142,17 @@
             height:100%;
             }
             button{
-            writing-mode:horizontal-tb;
+            /*writing-mode:horizontal-tb;*/
             padding:10px 20px;
-            background-image:url(pp8.jpg);
+            background-image:url(pp.jpg);
             background-size:cover;
-            font-size:26px;
+            font-size:31px;
 /*             background-color:; */
-            color:#FF6347;
+            color:black;
             border:none;
             cursor:pointer;
             margin:50px;
-            font-family:鸿雷板书简体-正式版;
+            font-family:MyFont;
             transform: skewX(-20deg);
             margin-left:70px;
             margin-right:70px;
@@ -154,13 +160,20 @@
             border-radius:5px;
             width:90px;
             height:160px;
+            box-shadow:
+			2px 4px 2px 5px rgba(0,0,0,0.2),
+			
+			2px 4px 1px 1px hsl(208, 50%, 55%),
+              
+			0 -15px 2px 2px rgba(0,0,0,0.10) inset;
+
             }
-            button:hover{
+                    button:hover{
             background-color:#6495ED
             }
     </style>
 </head>
-<body background="pp9.jpg"
+<body background="pp.jpg"
       style="background-repeat:no-repeat
       background-attachment:fixed;
       background-size:100% 100%; ">
