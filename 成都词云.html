@@ -181,19 +181,20 @@
             sizeRange: [30, 120],
             rotationRange: [-45, 90],
             textStyle: {
-	        normal: {
-	          fontFamily: '微软雅黑',
-	          // fontWeight: 'bold',
-	          color: function() {
-	            // Random color
-	            return 'rgb(' + [
-	              Math.round(Math.random() * 200),
-	              Math.round(Math.random() * 250),
-	              Math.round(Math.random() * 250)
-	            ].join(',') + ')';
-	          }
-	        }
-            }
+		    noraml:{
+			    color: function () {
+		                return (
+		                  "rgb(" +
+		                  Math.round(Math.random() * 160) +
+		                  "," +
+		                  Math.round(Math.random() * 160) +
+		                  "," +
+		                  Math.round(Math.random() * 160) +
+		                  ")"
+		                );
+		          },
+		 }
+            },
             // 调用数据
             data: jsonlist,
           },
