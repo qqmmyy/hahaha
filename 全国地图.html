@@ -37,10 +37,10 @@ visualMap: {
     show：false,
       min: 0,
       max: 8,
-      text: ['High', 'Low'],
-      realtime: true,
-      calculable: true,
-      hoverLink:true,
+      // text: ['High', 'Low'],
+      // realtime: true,
+      // calculable: true,
+      // hoverLink:true,
       inRange: {
       color: ['LightSkyBlue', 'yellow', '#FFA54F']
       }
@@ -144,6 +144,7 @@ myChart.on('click', function(params) {
           var name = params.data.name;
           if (name === '成都') {
             window.location.href = '成都地图.html';
+              window.wordcloud.href = '成都词云.html'
           } 
         //   else if (name === '散点') {
         //     window.location.href = '城市地图.html';
