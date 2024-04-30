@@ -7,11 +7,9 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 </head>
 <body >
-    <div id="china" style="width:1700px ; height: 1000px;"></div>
-
+    <div id="china" style="width:800px ; height: 800px;"></div>
 <script type="text/javascript">
    var myChart = echarts.init(document.getElementById('china'));
-
 // 指定图表的配置项和数据
 myChart.showLoading();
 $.get('https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json', function (geoJson) {
@@ -34,7 +32,6 @@ myChart.setOption(
                 },
 visualMap: {
     seriesIndex: 0,
-    show:false,
       min: 0,
       max: 8,
       text: ['High', 'Low'],
@@ -109,15 +106,13 @@ visualMap: {
                     show:true,
                     position: 'right',
                   },
-
-                  symbolSize: 15,
+                  symbolSize: 10,
                   color:'#FF4500',
                   visualMap:false
                   
                   
         },
   ],
-
   tooltip: {
       trigger: 'item',
       formatter: '{b}<br/>{c}',
@@ -134,7 +129,6 @@ visualMap: {
       saveAsImage: {}
       }
   },
-
   });
 });
 // 使用刚指定的配置项和数据显示图表。
@@ -153,7 +147,6 @@ myChart.on('click', function(params) {
         }
       }
     });
-
 </script>
 </body>
 </html>
