@@ -8,6 +8,7 @@
 </head>
 <body >
     <div id="chengdu" style="width: 800px;height:800px;"></div>
+    <button onclick="goBack()" style="position: fixed; top: 40px; left: 20px; ">返回</button>
     <script type="text/javascript">
        var myChart = echarts.init(document.getElementById('chengdu'));   
     // 指定图表的配置项和数据
@@ -120,9 +121,9 @@
     
       });
     });
-    // 使用刚指定的配置项和数据显示图表。
-    myChart.setOption(option);
-    
+    function goBack() {
+            window.history.back();
+        }
     </script>
 </body>
 </html>
