@@ -181,19 +181,17 @@
             sizeRange: [30, 120],
             rotationRange: [-45, 90],
             textStyle: {
-		    noraml:{
-			    color: function () {
-		                return (
-		                  "rgb(" +
-		                  Math.round(Math.random() * 160) +
-		                  "," +
-		                  Math.round(Math.random() * 160) +
-		                  "," +
-		                  Math.round(Math.random() * 160) +
-		                  ")"
-		                );
-		          },
-		 }
+              color: function () {
+                return (
+                  "rgb(" +
+                  Math.round(Math.random() * 160) +
+                  "," +
+                  Math.round(Math.random() * 160) +
+                  "," +
+                  Math.round(Math.random() * 160) +
+                  ")"
+                );
+              },
             },
             // 调用数据
             data: jsonlist,
