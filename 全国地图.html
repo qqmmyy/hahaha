@@ -8,9 +8,6 @@
 </head>
 <body >
     <div id="china" style="width:1700px ; height: 1000px;"></div>
-
-<script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
-
 <script type="text/javascript">
    var myChart = echarts.init(document.getElementById('china'));
 
@@ -36,6 +33,7 @@ myChart.setOption(
                 },
 visualMap: {
     seriesIndex: 0,
+    show:false,
       min: 0,
       max: 8,
       text: ['High', 'Low'],
@@ -139,6 +137,7 @@ visualMap: {
   });
 });
 // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
 myChart.on('click', function(params) {
       if (params.componentType === 'series') {
         if (params.seriesType === 'effectScatter') {
